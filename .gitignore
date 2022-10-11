@@ -5,6 +5,10 @@
 ### Vs code ###
 .vscode/
 .idea/
+*/a.out
+
+
+
 ### C ###
 # Prerequisites
 *.d
@@ -49,6 +53,8 @@
 *.su
 *.idb
 *.pdb
+
+
 
 # Kernel Module Compile Results
 *.mod*
