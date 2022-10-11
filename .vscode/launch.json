@@ -4,10 +4,10 @@
     {
       "type": "lldb",
       "request": "launch",
-      "name": "Debug",
+      "name": "Lldb debug",
       "program": "${fileDirname}/${fileBasenameNoExtension}",
       "args": [],
-      "cwd": "${fileDirname}"
+      "cwd": "${workspaceRoot}"
     }
   ]
 }
