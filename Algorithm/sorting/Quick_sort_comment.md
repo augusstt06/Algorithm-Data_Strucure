@@ -1,12 +1,12 @@
 # 퀵 정렬
 
-### 핵심 아이디어
+## 핵심 아이디어
 
 > 특정 값(피벗 값)을 기준으로 큰 숫자, 작은 숫자를 찾아 정렬한다.
 
 - 기본적인 알고리즘 진행방식은 파이썬의 퀵 정렬과 동일하다.
 
-### 소스 코드
+## 소스 코드
 
 ```
 #include <stdio.h>
@@ -78,14 +78,14 @@ int main(void)
 }
 ```
 
-### 코드 설명
+## 코드 설명
 
 소스코드를 보면 크게 4개의 함수로 분리되어 있다.
 차례대로 함수의 기능을 살펴보며 알고리즘을 이해해보자.
 
 > 전에 프로그래밍을 할 때는 신경쓰지 않았지만, 함수는 하나의 기능만을 수행해야 한다.
 
-**_1. swap 함수_**
+### **_1. swap 함수_**
 
 ```
 void swap(int *A, int *B)
@@ -100,7 +100,7 @@ void swap(int *A, int *B)
 함수의 이름 그대로 **매개변수로 받은 A, B의 값을 서로 바꿔주는 역할**을 하는 함수이다.
 temp라는 변수를 사용하여 A, B의 포인터(주소)값을 서로 바꿔준다.
 
-**_2. Partition 함수_**
+### **_2. Partition 함수_**
 
 ```
 int Partition(int dataSet[], int left, int right)
@@ -218,7 +218,7 @@ swap(&dataSet[first], &dataSet[right]);
 
 left 값이 right값보다 커진다는 의미는 더이상 탐색하는 범위내에서는 현재 피벗값으로 정렬할수 있는 요소는 없다는 뜻이기 때문에, 피벗 값을 바꾸어 해당 값 (새로운 피벗값)을 리턴한다.
 
-**_3. QuickSort 함수_**
+### **_3. QuickSort 함수_**
 
 ```
 void QuickSort(int dataSet[], int left, int right)
@@ -240,7 +240,7 @@ void QuickSort(int dataSet[], int left, int right)
 
 재귀적으로 QuickSort를 시행한단뜻은 주어진 배열을 계속해서 피벗 값을 기준으로 탐색하여 정렬한다는 의미이다.
 
-**_4. Main 함수_**
+### **_4. Main 함수_**
 
 ```
 int main(void)
